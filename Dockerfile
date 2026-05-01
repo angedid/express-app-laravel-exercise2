@@ -84,7 +84,7 @@ RUN echo 'export NVM_DIR="$HOME/.nvm"' >> /home/www/.bashrc && \
     echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> /home/www/.bashrc
 
 
-
+RUN cp /usr/local/bin/php /usr/bin/
     
 # Set the working directory
 WORKDIR /var/www/lofombo
