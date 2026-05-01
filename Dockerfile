@@ -116,7 +116,7 @@ RUN mkdir -p /var/log
 #RUN php artisan cache:clear
 
 ENTRYPOINT []
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=7000"
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=7000"]
 
 #CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/laravel-worker.conf"]
 
@@ -124,6 +124,7 @@ CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=7000"
 #RUN chmod -R 777 ./storage
 # Default command to keep the container running
 #CMD ["php artisan migrate --force && php artisan serve --port=8080"]
+#RUN  php artisan migrate  
 #CMD ["sh", "-c", "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8080"]
 #RUN php artisan queue:work --tries=3 --timeout=90
 #CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
