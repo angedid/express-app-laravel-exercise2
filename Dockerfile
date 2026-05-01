@@ -115,7 +115,7 @@ RUN mkdir -p /var/log
 #RUN php artisan cache:clear
 
 ENTRYPOINT []
-CMD ["php artisan serve --host=0.0.0.0 --port=7000"]
+CMD ["/usr/local/bin/php artisan serve --host=0.0.0.0 --port=7000"]
 
 #CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/laravel-worker.conf"]
 
